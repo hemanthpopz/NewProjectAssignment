@@ -1,0 +1,157 @@
+.logo-heading{
+    color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Scheherazade;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-ul li{
+    color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Archivo;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition-duration: 0.7s;
+cursor: pointer;
+transition-timing-function: ease-in-out;
+}
+
+.nav-ul li:hover{
+    color:#FF6B00;
+    opacity: 0.7;
+
+}
+
+.build-btn{
+    background-image: url('../Images/ColorVector.svg');
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border-width: 0px;
+    color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Archivo;
+font-size: 18px;
+font-style: normal;
+cursor: pointer;
+font-weight: 600;
+margin-left: 60px;
+line-height: normal;
+transition-duration: 0.7s;
+transition-timing-function: ease-in-out;
+}
+
+.build-btn:hover{
+    opacity: 0.7;
+}
+
+.menu-icon{
+    color: #FF6B00;
+    font-size: 30px;
+    display: none;
+}
+
+.sm-nav{
+    display: none;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .logo-heading{
+        font-size: 35px;
+    }
+    .logo-container img{
+        width: 100px;
+    }
+
+    .nav-ul li{
+        font-size: 16px;
+    }
+
+    .build-btn{
+        width: 160px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 15px;
+    }
+    
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .nav-ul li{
+        font-size: 12px;
+    }
+    .logo-heading{
+        font-size: 30px;
+    }
+    .logo-container img{
+        width: 60px;
+    }
+    .build-btn{
+        width: 140px;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:850px) {
+    .logo-heading{
+        font-size: 20px;
+    }
+    .build-btn{
+        width: 120px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:790px) {
+
+    .lg-nav{
+        display: none;
+    }
+    .sm-nav{
+        display: block;
+        text-align: right;
+    }
+
+    .sm-nav li{
+        margin-top: 20px;
+
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+
+button{
+    background-color: transparent;
+    border-width: 0px;
+}
